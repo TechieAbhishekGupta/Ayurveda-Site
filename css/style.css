@@ -1,0 +1,344 @@
+/* Global Styles */
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #FAFAFA;
+	/* Soft white */
+	color: #5D4037;
+	/* Earthy Brown */
+	margin: 0;
+	padding: 0;
+}
+
+/* Header Styles */
+.header {
+	background-color: #4CAF50;
+	/* Green */
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* Navigation Bar */
+.navbar {
+	background-color: #81C784;
+	/* Soft Leaf Green */
+	padding: 10px 0;
+	text-align: center;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	padding: 12px 20px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.navbar a:hover {
+	background-color: #4CAF50;
+	/* Darker green */
+	border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+	background: linear-gradient(to right, #4CAF50, #81C784);
+	color: white;
+	text-align: center;
+	padding: 60px 20px;
+	font-family: 'Playfair Display', serif;
+}
+
+.hero h1 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.hero p {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+	background-color: #FFD54F;
+	/* Earthy Yellow */
+	color: #5D4037;
+	text-align: center;
+	padding: 40px 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* Section with Images */
+.ayurveda-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.ayurveda-info img {
+	width: 200px;
+	height: auto;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+/* Global Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #4CAF50;
+	/* Green */
+	padding: 15px 40px;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo a {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Links */
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.nav-links li {
+	display: inline-block;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 10px 15px;
+	transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.nav-links a:hover {
+	background-color: #81C784;
+	/* Light Green */
+	border-radius: 5px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons Section */
+.nav-icons {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+/* Cart & Profile Icons */
+.cart-icon,
+.profile-icon {
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+	transition: transform 0.2s ease;
+}
+
+.cart-icon:hover,
+.profile-icon:hover {
+	transform: scale(1.1);
+}
+
+/* Login Button */
+.login-btn {
+	text-decoration: none;
+	background-color: #FFD54F;
+	/* Earthy Yellow */
+	color: #5D4037;
+	padding: 8px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+	background-color: #FFC107;
+	transform: scale(1.05);
+}
+
+/* Responsive Navbar (For Mobile Screens) */
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+		padding: 10px;
+	}
+
+	.nav-links {
+		flex-direction: column;
+		text-align: center;
+		gap: 10px;
+	}
+
+	.nav-icons {
+		margin-top: 10px;
+	}
+}
+/* Footer Start */
+footer {
+	background: linear-gradient(to top, #FAF3E0 0%, #F5E6C4 100%);
+	border-top: #8B5A2B solid 2px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding-top: 20px;
+	border-radius: 6px;
+}
+
+#footer_nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3.5rem;
+	padding: 60px;
+	justify-content: space-evenly;
+}
+
+#footer_nav .footer_col h5 {
+	color: #1B4332;
+	/* Dark Green */
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.footer_col ul {
+	margin-top: 20px;
+}
+
+.footer_col ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.footer_col a {
+	color: #8B5A2B;
+	/* Earthy Brown */
+	text-decoration: none;
+}
+
+.footer_col a:hover {
+	color: black;
+	/* Gold Hover Effect */
+}
+
+.footer_col form {
+	display: flex;
+	gap: 10px;
+}
+
+.footer_col input {
+	outline: none;
+	border: 1px solid #8B5A2B;
+	caret-color: #8B5A2B;
+	color: #1B4332;
+	padding-left: 10px;
+	height: 40px;
+	border-radius: 6px;
+	width: 100%;
+	background-color: #FAF3E0;
+}
+
+.footer_col .filled-button {
+	background-color: #1B4332;
+	color: #FAF3E0;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.footer_col .filled-button:hover {
+	background-color: #FFD700;
+	color: #1B4332;
+}
+
+.footer_bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background-color: #1B4332;
+	color: #FAF3E0;
+	padding: 10px 20px;
+	gap: 10px;
+}
+
+/* Ensuring order for larger screens */
+@media (min-width: 768px) {
+	.footer_bottom {
+		flex-direction: row;
+	}
+
+	.footer_bottom>div:first-child {
+		order: 1;
+	}
+
+	.footer_bottom>div:nth-child(2) {
+		order: 2;
+	}
+
+	.footer_bottom>div:last-child {
+		order: 3;
+	}
+}
+
+/* Stacking elements on mobile */
+@media (max-width: 767px) {
+	.footer_bottom {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.footer_bottom>div {
+		width: 100%;
+	}
+}
+
+/* Hover effect for links */
+.footer_bottom a {
+	color: #FAF3E0;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer_bottom a:hover {
+	color: black;
+	/* Gold color on hover */
+}
+
+/* Adding icons */
+.footer_bottom a i {
+	margin-right: 5px;
+}
+
+/* Footer Close */
