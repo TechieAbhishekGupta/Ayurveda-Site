@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Ayurvedic Bliss</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <main>
+      <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            What are the benefits of using Ayurvedic products?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Ayurvedic products are made with natural ingredients that help in
+            holistic healing, improving immunity, and balancing bodily functions
+            without harmful chemicals.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Are your products 100% natural and chemical-free?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes, our products are crafted using purely natural herbs, free from
+            synthetic chemicals, ensuring safe and effective results.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How do I confirm my order after purchasing?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Once you complete your purchase, you will receive an email and SMS
+            confirmation with your order details and tracking link.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            What payment methods do you accept?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            We accept credit/debit cards, UPI, Net banking, and COD (Cash on
+            Delivery) for your convenience.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How is your herbal brand different from others?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Our brand sources the purest herbs, follows traditional Ayurvedic
+            formulations, and ensures top-tier quality through rigorous testing.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How does your product compare with other brands?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Unlike others, our products are certified, lab-tested, and backed by
+            Ayurvedic research to ensure the best results.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Are your products approved by any authorities?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes, all our products are certified by the Ayush Ministry and
+            undergo stringent quality checks before reaching our customers.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Do you have any products for diabetic patients?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes, we offer herbal formulations that help regulate blood sugar
+            levels naturally without side effects.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Can Ayurvedic products be used alongside modern medicines?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes, but we recommend consulting a healthcare professional for the
+            best guidance based on your health condition.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            What is the shelf life of your herbal products?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Most of our products have a shelf life of 2 to 3 years, as per the
+            Ayurvedic standards.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How long does it take to see results with your herbal products?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Results may vary, but generally, noticeable improvements can be seen
+            within 2 to 4 weeks of regular use.
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.querySelectorAll(".faq-item").forEach((item) => {
+          item.addEventListener("click", () => {
+            item.classList.toggle("open");
+            const icon = item.querySelector(".icon");
+            icon.textContent = item.classList.contains("open") ? "-" : "+";
+          });
+        });
+      </script>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <!-- Load Header & Footer Script -->
+    <script src="js/loadHeaderFooter.js"></script>
+  </body>
+</html>

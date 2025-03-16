@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Ayurvedic Bliss</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <main>
+      <div class="profile-container">
+        <div class="profile-card">
+          <!-- Profile Header -->
+          <div class="profile-header">
+            <div class="profile-img">
+              <img src="assets/images/profile.png" alt="User Profile" />
+              <label for="upload-photo" class="edit-icon"
+                ><i class="fas fa-camera"></i
+              ></label>
+              <input type="file" id="upload-photo" hidden />
+            </div>
+            <h2>Abhishek Gupta</h2>
+            <p class="email">hello@example.com</p>
+            <p class="role">Loyal Customer | Ayurveda Enthusiast</p>
+          </div>
+
+          <!-- Profile Details -->
+          <div class="profile-details">
+            <h3>Personal Information</h3>
+            <p><strong>Phone:</strong> +91 1234567890</p>
+            <p><strong>Address:</strong> 123, Varanasi, India</p>
+            <p><strong>Joined:</strong> Jan 2023</p>
+          </div>
+
+          <!-- Orders Section -->
+          <div class="profile-orders">
+            <h3>Recent Orders</h3>
+            <div class="order">
+              <p>
+                🛒 <strong>Order #12345</strong> - Ayurvedic Herbal Tea - ₹499
+              </p>
+              <p class="status delivered">Status: Delivered</p>
+            </div>
+            <div class="order">
+              <p>🛒 <strong>Order #12346</strong> - Organic Honey - ₹299</p>
+              <p class="status pending">Status: Pending</p>
+            </div>
+            <a href="#" class="view-all">View All Orders</a>
+          </div>
+
+          <!-- Wishlist Section -->
+          <div class="profile-wishlist">
+            <h3>Wishlist</h3>
+            <div class="wishlist-item">
+              <p>🌿 Ashwagandha Powder - ₹799</p>
+              <button class="remove-btn">Remove</button>
+            </div>
+            <div class="wishlist-item">
+              <p>🍯 Pure Ayurvedic Ghee - ₹999</p>
+              <button class="remove-btn">Remove</button>
+            </div>
+            <a href="#" class="view-all">View Wishlist</a>
+          </div>
+
+          <!-- Account Actions -->
+          <div class="profile-actions">
+            <button class="edit-profile">Edit Profile</button>
+            <button class="change-password">Change Password</button>
+            <button class="logout">Logout</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <!-- Load Header & Footer Script -->
+    <script src="js/loadHeaderFooter.js"></script>
+  </body>
+</html>
